@@ -5,6 +5,9 @@ two 32 bits chunks and then calculate their XOR
 after that do the same for 16, 8, 4, 2, 1 bits
 in the end return the last bit of the word by
 Anding it with the remaining number
+
+time complexity : O(logn)
+space complexity : O(1)
 '''
 
 def parity(x):
