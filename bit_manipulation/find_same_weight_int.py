@@ -3,6 +3,9 @@ The question is to find the integer with closest weight
 here weight mean by number of ones in the binary form of the integer
 1. n should not equal to y
 2. And the difference |y-n| should me minimum
+
+The logic here is to swap the first different bit
+starting for the LSB with its neighbour
 '''
 
 def find_closest_weight(n):
@@ -13,5 +16,4 @@ def find_closest_weight(n):
             return n
 
 
-print(find_closest_weight(7
-                          ))
+print(find_closest_weight(7))
