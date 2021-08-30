@@ -25,9 +25,13 @@ def brute_force(x, y):
 
 def efficient_apporach(x, y):
     '''
-    This has complexity of log(n) 
+    This has complexity of log(n)
+    First we found the highest number that is lower than y,
+    then substract this number from y and update x as the result of substraction
+    at the same time add the lowest power of 2 in the result.
     '''
     result , power = 0, 32
+    #finding the highest number 
     k = y << power
     while x >= y:
         while k > x:
