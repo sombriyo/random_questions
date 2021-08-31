@@ -1,5 +1,8 @@
 '''
 Reverse the digits of a number
+The logic here is to convert the interger into string 
+then carry out reverse operations.
+complexity : O(1)
 '''
 
 def reverse_digits(a):
