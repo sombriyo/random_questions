@@ -1,6 +1,8 @@
 '''
 Find the number of  overlapping rectangles
-from the given coordinates
+from the given coordinates 
+And return the coordinates of overlapping triangles
+
 '''
 
 from collections import namedtuple
