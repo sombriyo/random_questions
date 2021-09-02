@@ -19,10 +19,12 @@ def intersect_rectangle(r1,r2):
 
     if not is_intersect(r1,r2):
         return 'No overlapping'
+    x = max(r1.x, r2.x)
+    y =  max(r1.y, r2.y)
+    width = min((r1.x + r1.width), (r2.x + r2.width)) - max(r1.x, r2.x)
+    height = min((r1.y + r1.height), (r2.y + r2.height)) - max(r1.y, r2.y)
 
-    return rectangle(max(r1.x, r2.x), max(r1.y, r2.y),
-                     min((r1.x + r1.width), (r2.x + r2.width)) - max(r1.x, r2.x),
-                     min((r1.y + r1.height), (r2.y + r2.height)) - max(r1.y, r2.y))
+    return rectangle(x,y, width, height)
 
 r1 = rectangle(5,3,2,4)
 r2 = rectangle(2,3,4,3)
