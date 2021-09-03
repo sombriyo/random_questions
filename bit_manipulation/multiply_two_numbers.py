@@ -20,8 +20,6 @@ def russian_peasant_method(a,b):
     The logic here is to double a number
     and half the second number and keep adding it
     till the second number become 1
-    Time complexity : O(n)
-    Space Complexity : O(1)
     '''
     res = 0
     while b:
